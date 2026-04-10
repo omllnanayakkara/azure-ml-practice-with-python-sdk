@@ -23,7 +23,8 @@ class TestWorkspace:
     def get_workspace(self, name:str) -> Workspace | None:
         try:
             wp = self.mlClient.workspaces.get(name=name)
-            print(f"Workspace with name {wp.name} fetched successfully")
+            if wp is not None:
+                print(f"Workspace with name {wp.name} fetched successfully")
             return wp
         except Exception as e:
             print(f"Failed to fetch workspace: {e}")
@@ -39,5 +40,4 @@ class TestWorkspace:
 
 if __name__ == "__main__":
     test = TestWorkspace()
-    wp = test.get_workspace(name="myworkspace")
-    test.delete_workspace(name=wp.name)
+    wp = test.create_workspace()
