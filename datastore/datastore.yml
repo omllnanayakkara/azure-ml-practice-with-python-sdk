@@ -1,0 +1,5 @@
+$schema: https://azuremlschemas.azureedge.net/latest/azureBlob.schema.json
+name: ""
+type: ""
+account_name: ""
+container_name: ""
