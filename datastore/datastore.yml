@@ -1,5 +1,5 @@
 $schema: https://azuremlschemas.azureedge.net/latest/azureBlob.schema.json
-name: ""
-type: ""
-account_name: ""
-container_name: ""
+name: "MyBlobDatastore"
+type: "azure_blob"
+account_name: "lahirustorageaccount0411"
+container_name: "mycontainer"
